@@ -31,6 +31,10 @@ namespace LOANMANAGEMENTAPI.Controllers
                 })
                 .ToListAsync();
 
+            if (!result.Any()) {
+               return Content("Empty");
+            }
+
             return Ok(result);
         }
 
@@ -43,6 +47,10 @@ namespace LOANMANAGEMENTAPI.Controllers
             var results = await _context.Loans
                 .Where(row => row.LoanEndDate >= today && row.LoanEndDate <= targetDate)
                 .ToListAsync();
+
+            if (!results.Any()) {
+                return Content("Empty");
+            }
 
             return Ok(results);
         }
