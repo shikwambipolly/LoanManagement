@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vPiqIRInT0fprR0r982+72NmB2NrYUqIZDhA1rDQ07Y=",
+  "Source": "LoanManagementAPI",
+  "BasePath": "_content/LoanManagementAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
